@@ -1,0 +1,10 @@
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: grey;
+    text-align: center;
+}
