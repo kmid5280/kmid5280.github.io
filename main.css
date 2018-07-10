@@ -3,6 +3,14 @@
     overflow: hidden;
 }
 
+/*
+
+    font-family: 'Istok Web', sans-serif;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+
+*/
+
 .topnav a {
     float: left;
     color: grey;
@@ -21,14 +29,42 @@
     background-color: #4CAF50;
     color: white;
 }
-
+main {
+    color: #211F1F;
+    background-color: #F2F2F2;
+    font-family: 'Istok Web', sans-serif;
+}
 header {
     text-align: center;
     font-size: 32px;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.about-me {
+    border: 1px solid black;
+    padding: 20px;
+    overflow: auto;
+}
+
+.about-me-left-side {
+    width: 48%;
+    text-align: center;
+    margin-top: 20px;
+    
+    border: 1px solid black;
+    float: left;
+}
+
+.about-me-right-side {
+    width: 48%;
+    float: right;
+    border: 1px solid black;
+    
+    
 }
 
 .intro-paragraph {
-
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .image-placeholder {
@@ -41,18 +77,107 @@ header {
 .project1, .project2, .project3 {
     background-color: light-grey;
     border: 1px solid grey;
-    width: 100%;
-   
+    width: 90%;
+    padding: 30px;
+    overflow: auto;
+    display: block;
+    font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
       
 }
 
 .project2 {
-    align: right;
+    right: 0;
+    
+    
+}
+
+.project1-image {
+    height: 150px;
+    width: 150px;
+    float: left;
+}
+
+.project1-text-wrapper, .project3-text-wrapper {
+    width: 50%;
+    float: right;
+}
+
+.project1-text {
+    text-align: right;
+    display: inline-block;
+}
+
+.project2-text-wrapper {
+    float: left;
+    width: 50%
+}
+
+.image-placeholder2 {
+    float: right;
+
+}
+
+.project2-image {
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+
+.project3-image {
+    float: left;
+    height: 150px;
+    width: 150px;
 }
 
 footer {
     width: 100%;
     height: 50px;
     border: 1px solid grey;
+}
+
+@media only screen and (max-width: 620px) {
+    .about-me-left-side {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 1px solid black;
+        float: none;
+    }
+    
+    .about-me-right-side {
+        width: 90%;
+        float: none;
+        border: 1px solid black;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+    .project1-image, .project2-image, .project3-image {
+       display: block;
+       float: none;
+       left: 0;
+       right: 0;
+       margin: auto;
+   }
+   .project1-text, .project2-text, .project3-text {
+       text-align: center;
+   }
+   .project1-text-wrapper, .project2-text-wrapper, .project3-text-wrapper {
+    float: none;
+    display: block;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 }
