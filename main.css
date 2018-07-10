@@ -1,15 +1,7 @@
-.topnav {
+/*.topnav {
     background-color: white;
     overflow: hidden;
 }
-
-/*
-
-    font-family: 'Istok Web', sans-serif;
-
-    font-family: 'IBM Plex Sans', sans-serif;
-
-*/
 
 .topnav a {
     float: left;
@@ -28,38 +20,41 @@
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}*/
+body {
+    background-color: #F2F2F2;
 }
 main {
     color: #211F1F;
-    background-color: #F2F2F2;
     font-family: 'Istok Web', sans-serif;
 }
 header {
     text-align: center;
     font-size: 32px;
     font-family: 'Istok Web', sans-serif;
+    
 }
 
 .about-me {
-    border: 1px solid black;
     padding: 20px;
     overflow: auto;
+    background-color: #D9C1BD;
+    background: linear-gradient(#D9C1BD 0, #F2F2F2 100%);
 }
 
 .about-me-left-side {
     width: 48%;
     text-align: center;
-    margin-top: 20px;
-    
-    border: 1px solid black;
+    margin-top: 40px;
     float: left;
+    font-size: 48px;
 }
 
 .about-me-right-side {
     width: 48%;
     float: right;
-    border: 1px solid black;
-    
+    margin-top: 120px;
+    padding-right: 20px;
     
 }
 
@@ -70,13 +65,11 @@ header {
 .image-placeholder {
     width: 100px;
     height: 100px;
-    border: 1px solid black;
     display: block;
 }
 
 .project1, .project2, .project3 {
     background-color: light-grey;
-    border: 1px solid grey;
     width: 90%;
     padding: 30px;
     overflow: auto;
@@ -134,10 +127,27 @@ header {
 }
 
 footer {
-    width: 100%;
+    width: 90%;
     height: 50px;
-    border: 1px solid grey;
+    font-size: 48px;
+    padding: 10px 5px 10px;
+    left:0;
+    right:0;
+    margin: auto;
+    text-align: center;
 }
+
+.fab {
+    
+
+}
+
+.fa-linkedin-in, .fa-github, .fa-envelope {
+    color: #A9C2B0;
+    text-shadow: -1px 0 #211F1F, 0 1px #211F1F, 1px 0 #211F1F, 0 -1px #211F1F;
+}
+
+
 
 @media only screen and (max-width: 620px) {
     .about-me-left-side {
