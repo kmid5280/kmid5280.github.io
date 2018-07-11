@@ -168,7 +168,7 @@ footer {
     .about-me {
         margin-top: 0;
         padding: 20;
-        height: 400px;
+        height: 450px;
         
     }
     
@@ -213,11 +213,10 @@ footer {
        left: 0;
        right: 0;
        margin: auto;
+       width: 90%;
+       height: 90%;
    }
-   .project3-image {
-       width: 300px;
-       height: 300px;
-   }
+   
    .project1-text, .project2-text, .project3-text {
        text-align: center;
    }
