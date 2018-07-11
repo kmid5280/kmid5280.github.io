@@ -1,28 +1,6 @@
-/*.topnav {
-    background-color: white;
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
-    color: grey;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}*/
 body {
     background-color: #F2F2F2;
+    
 }
 main {
     color: #211F1F;
@@ -36,18 +14,24 @@ header {
 }
 
 .about-me {
-    padding: 20px;
-    overflow: auto;
-    background-color: #D9C1BD;
+    padding: 10px;
     background: linear-gradient(#D9C1BD 0, #F2F2F2 100%);
+    height: 350px;
+    background-color: #D9C1BD;
+    
+    
 }
 
 .about-me-left-side {
+  
     width: 48%;
     text-align: center;
     margin-top: 40px;
     float: left;
     font-size: 48px;
+    position: relative;
+    
+    
 }
 
 .about-me-right-side {
@@ -57,19 +41,41 @@ header {
     padding-right: 20px;
     
 }
-
+.name {
+    display: block;
+    margin-top: 70px;
+}
 .intro-paragraph {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.image-placeholder {
-    width: 100px;
-    height: 100px;
+.top-icons-wrapper {
+    position: absolute;
+    bottom: 30;
     display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0px;
+    
+   
+}
+
+.line-break {
+    width: 80%;
+    background-color: #211F1F;
+    height: 3px;
+    border: none;
+}
+
+.line-break-project {
+    border: 0; 
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width: 80%;
 }
 
 .project1, .project2, .project3 {
-    background-color: light-grey;
     width: 90%;
     padding: 30px;
     overflow: auto;
@@ -81,22 +87,30 @@ header {
     margin: auto;
       
 }
+.project1 {
+    margin-top: 40px;
+}
 
 .project2 {
     right: 0;
-    
-    
 }
 
+
 .project1-image {
-    height: 150px;
-    width: 150px;
+    width: 391px;
+    height: 247px;
+    
     float: left;
 }
 
 .project1-text-wrapper, .project3-text-wrapper {
     width: 50%;
     float: right;
+}
+
+.project2-text-wrapper {
+    float: left;
+    width: 50%;
 }
 
 .project1-text {
@@ -116,14 +130,15 @@ header {
 
 .project2-image {
     float: right;
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 250px;
 }
 
 .project3-image {
     float: left;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
+    margin-left: 100px;
 }
 
 footer {
@@ -135,41 +150,63 @@ footer {
     right:0;
     margin: auto;
     text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-.fab {
-    
-
+.fa-envelope, .fa-linkedin-in {
+    margin-right: 30px;
 }
 
-.fa-linkedin-in, .fa-github, .fa-envelope {
-    color: #A9C2B0;
+.fa-envelope, .fa-linkedin-in, .fa-github  {
+    color: #a9c2b0;
     text-shadow: -1px 0 #211F1F, 0 1px #211F1F, 1px 0 #211F1F, 0 -1px #211F1F;
 }
 
 
 
 @media only screen and (max-width: 620px) {
+    .about-me {
+        margin-top: 0;
+        padding: 20;
+        height: 400px;
+        
+    }
+    
     .about-me-left-side {
         width: 90%;
         text-align: center;
         margin-top: 20px;
-        display: block;
         left: 0;
         right: 0;
         margin: auto;
-        border: 1px solid black;
         float: none;
+        height: 160px;
     }
+    .name {
+        display: block;
+    }
+    .top-icons-wrapper {
+        
+        display: block;
+        position: relative;
+        
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 70px;
+        }
     
     .about-me-right-side {
         width: 90%;
         float: none;
-        border: 1px solid black;
         display: block;
         left: 0;
         right: 0;
         margin: auto;
+        text-align: center;
+        margin-top: 20px;
         
     }
     .project1-image, .project2-image, .project3-image {
@@ -178,6 +215,10 @@ footer {
        left: 0;
        right: 0;
        margin: auto;
+   }
+   .project3-image {
+       width: 80%;
+       height: 340px;
    }
    .project1-text, .project2-text, .project3-text {
        text-align: center;
@@ -190,4 +231,7 @@ footer {
     right: 0;
     margin: auto;
 }
+    .bottom-icon-wrapper {
+        display: block;
+    }
 }
