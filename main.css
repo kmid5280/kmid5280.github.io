@@ -113,19 +113,11 @@ header {
     width: 50%;
 }
 
-.project1-text {
-    text-align: right;
-    display: inline-block;
-}
+
 
 .project2-text-wrapper {
     float: left;
     width: 50%
-}
-
-.image-placeholder2 {
-    float: right;
-
 }
 
 .project2-image {
@@ -134,11 +126,12 @@ header {
     height: 250px;
 }
 
+
 .project3-image {
     float: left;
-    height: 200px;
-    width: 200px;
-    margin-left: 100px;
+    height: 230px;
+    width: 230px;
+    margin-left: 80px;
 }
 
 footer {
@@ -217,8 +210,8 @@ footer {
        margin: auto;
    }
    .project3-image {
-       width: 80%;
-       height: 340px;
+       width: 60%;
+       height: 300px;
    }
    .project1-text, .project2-text, .project3-text {
        text-align: center;
