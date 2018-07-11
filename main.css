@@ -33,7 +33,7 @@ header {
 }
 
 .about-me-right-side {
-    width: 48%;
+    width: 40%;
     float: right;
     margin-top: 120px;
     padding-right: 40px;
@@ -88,11 +88,6 @@ header {
 .project1 {
     margin-top: 40px;
 }
-
-.project2 {
-    right: 0;
-}
-
 
 .project1-image {
     width: 391px;
@@ -205,7 +200,13 @@ footer {
         margin: auto;
         text-align: center;
         margin-top: 20px;
+        padding-right: 0;
         
+    }
+
+    .project1, project2, project3 {
+
+        padding: 0;
     }
     .project1-image, .project2-image, .project3-image {
        display: block;
@@ -216,7 +217,6 @@ footer {
        width: 90%;
        height: 90%;
    }
-   
    .project1-text, .project2-text, .project3-text {
        text-align: center;
    }
