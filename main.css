@@ -29,16 +29,14 @@ header {
     margin-top: 40px;
     float: left;
     font-size: 48px;
-    position: relative;
-    
-    
+    position: relative;   
 }
 
 .about-me-right-side {
     width: 48%;
     float: right;
     margin-top: 120px;
-    padding-right: 20px;
+    padding-right: 40px;
     
 }
 .name {
@@ -51,12 +49,12 @@ header {
 
 .top-icons-wrapper {
     position: absolute;
-    bottom: 30;
+    
     display: block;
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 0px;
+    bottom: -10px;
     
    
 }
@@ -145,7 +143,10 @@ footer {
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
+}
+.fa-envelope {
+    cursor: pointer;
 }
 
 .fa-envelope, .fa-linkedin-in {
@@ -155,6 +156,10 @@ footer {
 .fa-envelope, .fa-linkedin-in, .fa-github  {
     color: #a9c2b0;
     text-shadow: -1px 0 #211F1F, 0 1px #211F1F, 1px 0 #211F1F, 0 -1px #211F1F;
+}
+.bottom-icon-wrapper {
+    display: block;
+    margin-top: 10px;
 }
 
 
@@ -210,7 +215,7 @@ footer {
        margin: auto;
    }
    .project3-image {
-       width: 60%;
+       width: 300px;
        height: 300px;
    }
    .project1-text, .project2-text, .project3-text {
