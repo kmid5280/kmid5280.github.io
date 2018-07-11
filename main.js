@@ -18,9 +18,9 @@ function renderIconsBottom() {
 function emailClick() {
     const mail1 = 'mail'
     const to = 'to:'
-    const email1 = 'email'
+    const email1 = 'kylemid321'
     const email2 = '@'
-    const email3 = 'email.com'
+    const email3 = 'gmail.com'
     
     $('.fa-envelope').on('click', event => {
         window.location = mail1+to+email1+email2+email3
