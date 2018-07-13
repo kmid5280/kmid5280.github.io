@@ -64,6 +64,7 @@ header {
     background-color: #211F1F;
     height: 3px;
     border: none;
+    display: block;
 }
 
 .line-break-project {
@@ -73,7 +74,7 @@ header {
     width: 80%;
 }
 
-.project1, .project2, .project3 {
+.project1, .project2, .project3, .project4 {
     width: 90%;
     padding: 30px;
     overflow: auto;
@@ -101,16 +102,9 @@ header {
     float: right;
 }
 
-.project2-text-wrapper {
+.project2-text-wrapper, .project4-text-wrapper {
     float: left;
     width: 50%;
-}
-
-
-
-.project2-text-wrapper {
-    float: left;
-    width: 50%
 }
 
 .project2-image {
@@ -125,6 +119,13 @@ header {
     height: 230px;
     width: 230px;
     margin-left: 80px;
+}
+
+.project4-image {
+    float: right;
+    height: 200px;
+    width: 300px;
+    
 }
 
 footer {
@@ -204,11 +205,11 @@ footer {
         
     }
 
-    .project1, project2, project3 {
+    .project1, project2, project3, .project4 {
 
         padding: 0;
     }
-    .project1-image, .project2-image, .project3-image {
+    .project1-image, .project2-image, .project3-image, .project4-image {
        display: block;
        float: none;
        left: 0;
@@ -217,10 +218,10 @@ footer {
        width: 90%;
        height: 90%;
    }
-   .project1-text, .project2-text, .project3-text {
+   .project1-text, .project2-text, .project3-text, .project4-text {
        text-align: center;
    }
-   .project1-text-wrapper, .project2-text-wrapper, .project3-text-wrapper {
+   .project1-text-wrapper, .project2-text-wrapper, .project3-text-wrapper, .project4-text-wrapper {
     float: none;
     display: block;
     width: 90%;
