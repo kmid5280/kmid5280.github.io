@@ -6,57 +6,57 @@ main {
     color: #211F1F;
     font-family: 'Istok Web', sans-serif;
 }
+
 header {
     text-align: center;
     font-size: 32px;
     font-family: 'Istok Web', sans-serif;
-    
 }
 
 .about-me {
     padding: 10px;
     background: linear-gradient(#D9C1BD 0, #F2F2F2 100%);
-    height: 350px;
     background-color: #D9C1BD;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
     
 }
 
 .about-me-left-side {
-  
-    width: 48%;
-    text-align: center;
-    margin-top: 40px;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex: 1;
     font-size: 48px;
-    position: relative;   
+    justify-content: center;
+    
 }
 
 .about-me-right-side {
-    width: 40%;
-    float: right;
-    margin-top: 120px;
-    padding-right: 40px;
-    
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    flex: 1;
+    justify-content: center;
 }
+
 .name {
-    display: block;
-    margin-top: 70px;
+    order: 1;
+    text-align: center;
 }
+
 .intro-paragraph {
     font-family: 'IBM Plex Sans', sans-serif;
+    order: 1;
 }
 
 .top-icons-wrapper {
-    position: absolute;
-    
-    display: block;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: -10px;
-    
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    order: 2;
+    margin-top: -40px;
 }
 
 .line-break {
@@ -78,51 +78,52 @@ header {
     width: 90%;
     padding: 30px;
     overflow: auto;
-    display: block;
+    display: flex;
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
     left: 0;
     right: 0;
     margin: auto;
+    justify-content: space-evenly;
       
 }
 .project1 {
     margin-top: 40px;
 }
 
+.project1, .project3 {
+    flex-direction: row;
+}
+.project2, .project4 {
+    flex-direction: row-reverse;
+}
+
+.project1-image, .project2-image, .project3-image, .project4-image {
+    order: 1;
+}
+
 .project1-image {
     width: 391px;
-    height: 247px;
-    
-    float: left;
+    height: 247px;    
 }
 
-.project1-text-wrapper, .project3-text-wrapper {
+.project1-text-wrapper, .project2-text-wrapper, .project3-text-wrapper, .project4-text-wrapper {
     width: 50%;
-    float: right;
-}
-
-.project2-text-wrapper, .project4-text-wrapper {
-    float: left;
-    width: 50%;
+    order: 2;
 }
 
 .project2-image {
-    float: right;
     width: 350px;
     height: 250px;
 }
 
 
 .project3-image {
-    float: left;
     height: 230px;
     width: 230px;
-    margin-left: 80px;
 }
 
 .project4-image {
-    float: right;
     height: 200px;
     width: 300px;
     
@@ -131,7 +132,6 @@ header {
 footer {
     width: 90%;
     height: 50px;
-    font-size: 48px;
     padding: 10px 5px 10px;
     left:0;
     right:0;
@@ -141,21 +141,40 @@ footer {
     margin-top: 30px;
     margin-bottom: 120px;
 }
+
 .fa-envelope {
     cursor: pointer;
+    order: 1;
+    margin-top: 5px;
 }
 
-.fa-envelope, .fa-linkedin-in {
-    margin-right: 30px;
+.fa-linkedin-in {
+    order: 2;
+}
+
+.fa-github {
+    order: 3;
 }
 
 .fa-envelope, .fa-linkedin-in, .fa-github  {
-    color: #a9c2b0;
+    color: #001a00;
     text-shadow: -1px 0 #211F1F, 0 1px #211F1F, 1px 0 #211F1F, 0 -1px #211F1F;
 }
+
+.contact-text {
+    font-size: 48px;
+}
+
 .bottom-icon-wrapper {
-    display: block;
-    margin-top: 10px;
+    display: flex;
+    font-size: 48px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -20px;
+    width: 70%;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 
@@ -163,73 +182,83 @@ footer {
 @media only screen and (max-width: 620px) {
     .about-me {
         margin-top: 0;
-        padding: 20;
-        height: 450px;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .about-me-left-side {
-        width: 90%;
-        text-align: center;
+        display: flex;
+        order: 1;
+        flex-direction: column;
         margin-top: 20px;
         left: 0;
         right: 0;
         margin: auto;
-        float: none;
-        height: 160px;
+        text-align: center;
+        width: 100%;
+
     }
+
     .name {
-        display: block;
+        order: 1;
     }
+
     .top-icons-wrapper {
-        
-        display: block;
-        position: relative;
-        
-        left: 0;
-        right: 0;
-        margin: auto;
-        bottom: 70px;
-        }
+        order: 2;
+        text-align: center;
+        justify-content: space-evenly;
+    }
     
     .about-me-right-side {
-        width: 90%;
-        float: none;
-        display: block;
+        order: 2;
         left: 0;
         right: 0;
         margin: auto;
         text-align: center;
         margin-top: 20px;
-        padding-right: 0;
+        padding: 5px;
         
     }
 
-    .project1, project2, project3, .project4 {
-
-        padding: 0;
+    .intro-paragraph {
+        text-align: justify;
+        text-justify: inter-word;
+        text-align-last: center;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+    .project1, .project2, .project3, .project4 {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
     .project1-image, .project2-image, .project3-image, .project4-image {
-       display: block;
-       float: none;
-       left: 0;
-       right: 0;
-       margin: auto;
+       order: 1;
        width: 90%;
        height: 90%;
+       margin-top: 15px;
+
    }
-   .project1-text, .project2-text, .project3-text, .project4-text {
-       text-align: center;
-   }
+
    .project1-text-wrapper, .project2-text-wrapper, .project3-text-wrapper, .project4-text-wrapper {
-    float: none;
-    display: block;
-    width: 90%;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-    .bottom-icon-wrapper {
-        display: block;
+        order: 2;
+        width: auto;
+        text-align: justify;
+        text-justify: inter-word;
+        text-align-last: center;
     }
+
+    footer {
+        margin-top: 0px;
+    }
+
+    .bottom-icon-wrapper {
+        width: auto;
+    }
+
 }
