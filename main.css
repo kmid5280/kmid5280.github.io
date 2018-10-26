@@ -19,8 +19,7 @@ header {
     background-color: #D9C1BD;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;  
-    
+    justify-content: space-around;   
 }
 
 .about-me-left-side {
@@ -30,7 +29,7 @@ header {
     flex: 1;
     font-size: 48px;
     justify-content: center;
-    
+   
 }
 
 .about-me-right-side {
@@ -39,6 +38,7 @@ header {
     order: 2;
     flex: 1;
     justify-content: center;
+    
 }
 
 .name {
@@ -49,6 +49,7 @@ header {
 .intro-paragraph {
     font-family: 'IBM Plex Sans', sans-serif;
     order: 1;
+    margin-right: 20%;
 }
 
 .top-icons-wrapper {
