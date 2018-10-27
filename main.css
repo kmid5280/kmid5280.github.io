@@ -99,11 +99,11 @@ header {
     flex-direction: row-reverse;
 }
 
-.project1-image, .project2-image, .project3-image, .project4-image {
+.countrysearch-image, .tictactoe-image, .exerciselogger-image, .statecapitalquiz-image {
     order: 1;
 }
 
-.project1-image {
+.statecapitalquiz-image {
     width: 391px;
     height: 247px;    
 }
@@ -113,18 +113,18 @@ header {
     order: 2;
 }
 
-.project2-image {
+.countrysearch-image {
     width: 350px;
     height: 250px;
 }
 
 
-.project3-image {
+.tictactoe-image {
     height: 230px;
     width: 230px;
 }
 
-.project4-image {
+.exerciselogger-image {
     height: 200px;
     width: 300px;
     
@@ -238,7 +238,7 @@ footer {
 
     }
 
-    .project1-image, .project2-image, .project3-image, .project4-image {
+    .countrysearch-image, .tictactoe-image, .exerciselogger-image, .statecapitalquiz-image {
        order: 1;
        width: 90%;
        height: 90%;
